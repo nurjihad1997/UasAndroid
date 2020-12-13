@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peseku" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/judulmain"
+    android:text="Silahkan Isi Data Anda !!"
+    android:textColor="@color/hitam"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nokk"
+            android:hint="No Kartu Keluarga"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namakepala"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama Kepala Keluarga"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alamat"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Alamat Lengkap"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rt"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="RT/RW"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lurah"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kelurahan"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/camat"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kecamatan"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kota"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kota"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/provinsi"
+            android:textColorHint="@color/abuabu"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Provinsi"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:layout_weight="1"
+                android:text="SIMPAN"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_data"
+                android:layout_weight="1"
+                android:text="CHECK DATA"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout"
+            android:text="LOGOUT"/>
+    </LinearLayout>
+
+</RelativeLayout>

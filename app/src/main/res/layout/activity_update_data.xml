@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateData">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peseku" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/judulupdate"
+            android:text="Silahkan Perbaiki Data Baru Anda !!"
+            android:textColor="@color/hitam"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_nokk"
+            android:hint="No Kartu Keluarga"
+            android:textColorHint="@color/hitam"
+            android:ems="10"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_namakepala"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama Kepala Keluarga"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_alamat"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Alamat Lengkap"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_rt"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="RT/RW"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_lurah"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kelurahan"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_camat"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kecamatan"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_kota"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kota"
+            android:textColorHint="@color/hitam"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_provinsi"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Provinsi"
+            android:textColorHint="@color/hitam"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"
+                    android:id="@+id/update"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
